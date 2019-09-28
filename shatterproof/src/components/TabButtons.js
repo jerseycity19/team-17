@@ -23,10 +23,10 @@ const styles = {
   },
 };
 
-const  OutlinedButtons=({classes})=> {
+const  OutlinedButtons=({classes, history})=> {
   return (
         <div  className={classes.container}>
-            <Button className={classes.button}>
+            <Button className={classes.button} onClick={()=>history.push('/resources')}>
                 Resources
             </Button>
             <Button className={classes.button}>
@@ -35,7 +35,9 @@ const  OutlinedButtons=({classes})=> {
             <Button className={classes.button}>
                 Forum
             </Button>
-            <Button className={classes.button}>
+            <Button 
+            className={classes.button} 
+            onClick={()=> history.push('/tracker')}>
                 Tracker
             </Button>
             <Button className={classes.button}>
