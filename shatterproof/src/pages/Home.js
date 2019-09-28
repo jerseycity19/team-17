@@ -13,8 +13,18 @@ class Home extends React.Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     </div>
                 <div className="Body">
-                    <p> Hello! </p>
+                    <p className="Mission-Statement"> Shatterproof is a national
+                    non-profit organization reversing the course of the addiction
+                    crisis in America and is dedicated to ending the devastation
+                    addiction causes families. Shatterproof's mission is transforming
+                    addiction treatment, shattering stigma of addiction, advocating
+                    for federal and state policy change and prayer reform, and supporting
+                    and educating the community. </p>
+
+                    <div className="Footer-Logos">
+                        <p> hi </p>
                     </div>
+                </div>
             </div>
         );
     }
