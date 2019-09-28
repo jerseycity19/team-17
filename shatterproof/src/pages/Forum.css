@@ -61,7 +61,6 @@
 .compose {
     padding: 20px;
     align-items: center;
-    position: fixed;
 }
 .compose-input {
     flex: 1;
