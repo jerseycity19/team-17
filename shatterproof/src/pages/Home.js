@@ -1,12 +1,17 @@
 import React from 'react';
 import './Home.css';
 import { SocialIcon } from 'react-social-icons';
-
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import DemoCarousel from './slideshow.js';
 class Home extends React.Component {
 
     render() {
         return (
             <div>
+                <div className="Image-Slideshow">
+                    <h1> Our Fighters </h1>
+                    <DemoCarousel />
+                </div>
                 <div className="Body">
                     <br />
                     <p className="Mission-Statement"> Shatterproof is a national

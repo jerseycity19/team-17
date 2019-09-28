@@ -24,3 +24,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000;
+    text-decoration: none;
+}
