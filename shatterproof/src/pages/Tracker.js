@@ -1,5 +1,6 @@
 import React from 'react';
 import Calendar from './Calendar.js';
+import Container from '@material-ui/core/Container';
 
 class Tracker extends React.Component {
     constructor(props) {
@@ -18,7 +19,18 @@ class Tracker extends React.Component {
         const { startDate, endDate } = this.state
     
         return (
-            <Calendar startDate={startDate} endDate={endDate} onChange={this.onChange} range displayTime />
+            <Container>
+              <div className = "calendarWrapper"> 
+              <div className="CalTitle">
+                <p> <strong>TRACK YOUR VICTORIES </strong></p>
+              </div>
+              <div className="TrackerInfo">
+                <p> Use this calendar to track your days without use! </p>
+              </div>
+              <br></br>
+              <Calendar startDate={startDate} endDate={endDate} onChange={this.onChange} range displayTime />
+              </div>
+            </Container>
         )
       }
 }

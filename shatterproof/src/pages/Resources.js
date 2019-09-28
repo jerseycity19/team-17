@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-import maps from '../GoogleMaps.PNG';
+import Map from './Map.js'
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -37,14 +37,20 @@ class Resources extends React.Component {
     render(){
         return(
             <div>
-                <div align="center">
-                    <h1>Treatment Centers Nearby</h1>
+                < br/>
+                < br/>
+                <div className="Title2" align="center">
+                    <p>  TREATMENT CENTERS NEARBY </p>
                 </div>
+                < br/>
+                < br/>
+                < br/>
                 <div align="center">
-                    <p></p>
+                    <p> We are here to be a resource <strong>for you</strong>. Look on the map below to find the nearest treatment centers.</p>
                 </div>
-                <div align="center">
-                    <img src={maps}/>
+                < br/>
+                <div className='map-wrap'>
+                <Map/>
                 </div>
                 <div align="center">
                     

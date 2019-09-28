@@ -3,6 +3,9 @@ import { number, func, bool, arrayOf, string } from 'prop-types'
 import t from 'timestamp-utils'
 import { initMonth, parseRange, getDays, dateIsBetween, dateIsOut, getDateWithoutTime } from './utils'
 
+import FormContainer from '../components/FormContainer.js';
+import Container from '@material-ui/core/Container';
+
 // Components
 import DateDetails from './DateDetails'
 import Navigation from './Navigation'
@@ -74,6 +77,7 @@ class Calendar extends Component {
     const { disableDates, displayTime, dayLabels, monthLabels } = this.props
 
     return (
+      <div>
       <div className="rlc-calendar">
         <div className="rlc-details">
           {!!sDate &&
@@ -116,8 +120,10 @@ class Calendar extends Component {
           )}
         </div>
       </div>
+    </div>
     )
   }
+  
 }
 
 Calendar.defaultProps = {

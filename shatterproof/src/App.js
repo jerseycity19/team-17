@@ -9,6 +9,8 @@ import {BrowserRouter as Router , Route } from 'react-router-dom';
 import OutlinedButtons from './components/TabButtons.js';
 import HomeButton from './components/HomeButton.js';
 import { SocialIcon } from 'react-social-icons';
+import Stigma from './pages/Stigma.js';
+import Forum from './pages/Forum.js';
 
 function App() {
   return (
@@ -37,9 +39,17 @@ function App() {
       path="/tracker"
       render ={(props)=> <Tracker {...props} />}
       />
+      <Route
+      path="/stigma"
+      render ={(props)=> <Stigma {...props} />}
+      />
+      <Route
+      path="/forum"
+      render ={(props)=> <Forum {...props} />}
+      />
       
     </Router>
-      <div className="Logos">
+      <div className="App-footer">
           <SocialIcon url="https://twitter.com/shatterproofhq?lang=en" target="_blank" style={{margin: 8}}/>
           <SocialIcon url="https://www.facebook.com/ShatterproofHQ/?ref=nf" target="_blank" style={{margin: 8}}/>
           <SocialIcon url="https://www.instagram.com/weareshatterproof/?hl=en" target="_blank" style={{margin: 8}}/>
