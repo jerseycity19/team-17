@@ -21,6 +21,13 @@ class Tracker extends React.Component {
         return (
             <Container>
               <div className = "calendarWrapper"> 
+              <div className="CalTitle">
+                <p> <strong>TRACK YOUR VICTORIES </strong></p>
+              </div>
+              <div className="TrackerInfo">
+                <p> Use this calendar to track your days without use! </p>
+              </div>
+              <br></br>
               <Calendar startDate={startDate} endDate={endDate} onChange={this.onChange} range displayTime />
               </div>
             </Container>

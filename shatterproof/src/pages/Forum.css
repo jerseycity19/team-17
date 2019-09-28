@@ -1,63 +1,82 @@
 .Title {
     text-align: center;
+    font-weight: bold;
     font-family: Andale Mono, monospace;
     background-color: rgb(255, 255, 255);
     font-size: 150%;
     line-height: 300%;
     width: 100%;
     height: 100%;
+    margin-top: 20px;
 }
 
 .ParentConv {
-    font-family: Andale Mono, monospace;
+    font-family: Helvetica, monospace;
+    font-size: 70%;
     width: 100%;
+}
+
+.ForumIntro {
+    font-size: 100%;
+    text-align: center;
 }
 
 .Conv1 {
     text-indent: 100x;
-    background-color: rgb(228, 235, 235);
+    background-color: rgb(240, 247, 238);
     height: 60px;
     left: 20x;
-    border-style: ridge;
-    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 50px;
     
 }
 .Conv2 {
     text-indent: 100x;
+    background-color: rgb(245, 248, 250);
     height: 60px;
     left: 20x;
-    border-style: ridge;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     margin-top: 10px;
     text-align: right;
     
 }
 .Conv3 {
     text-indent: 100x;
-    background-color: rgb(228, 235, 235);
+    background-color: rgb(240, 247, 238);
     height: 60px;
     left: 20x;
-    border-style: ridge;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     margin-top: 10px;
     
 }
 .Conv4 {
     text-indent: 100x;
+    background-color: rgb(240, 247, 238);
     height: 60px;
-    text-align: right;
     left: 20x;
-    border-style: ridge;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     margin-top: 10px;
     
 }
 .Conv5 {
     text-indent: 100x;
-    background-color: rgb(228, 235, 235);
+    background-color: rgb(240, 247, 238);
     height: 60px;
     left: 20x;
-    border-style: ridge;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     margin-top: 10px;
     
 }
+
+.Type {
+    margin-top: 40px;
+}
+
 .compose {
     padding: 20px;
     align-items: center;

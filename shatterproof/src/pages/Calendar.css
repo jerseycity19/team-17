@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.CalTitle {
+  font-family: Andale Mono, monospace;
+  text-align: center;
+  font-size: 150%;
+  line-height: 300%;
+  width: 100%;
+  height: 100%;
+}
+
 .rlc-calendar{
   font-family: 'Roboto', sans-serif;
   width: 300px;
