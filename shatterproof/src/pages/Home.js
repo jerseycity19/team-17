@@ -12,6 +12,7 @@ class Home extends React.Component {
         return (
             <div>
                 <div className="Body">
+                    <br />
                     <p className="Mission-Statement"> Shatterproof is a national
                     non-profit organization reversing the course of the addiction
                     crisis in America and is dedicated to ending the devastation
@@ -19,15 +20,14 @@ class Home extends React.Component {
                     addiction treatment, shattering stigma of addiction, advocating
                     for federal and state policy change and prayer reform, and supporting
                     and educating the community. </p>
-
-                    <div className="Footer-Logos">
-                        <div className="Logos">
-                            <SocialIcon url="https://twitter.com/shatterproofhq?lang=en" style={{margin: 8}}/>
-                            <SocialIcon url="https://www.facebook.com/ShatterproofHQ/?ref=nf" style={{margin: 8}}/>
-                            <SocialIcon url="https://www.instagram.com/weareshatterproof/?hl=en" style={{margin: 8}}/>
-                        </div>
-                    </div>
                 </div>
+                <footer className="Footer-Logos">
+                    <div className="Logos">
+                        <SocialIcon url="https://twitter.com/shatterproofhq?lang=en" style={{margin: 8}}/>
+                        <SocialIcon url="https://www.facebook.com/ShatterproofHQ/?ref=nf" style={{margin: 8}}/>
+                        <SocialIcon url="https://www.instagram.com/weareshatterproof/?hl=en" style={{margin: 8}}/>
+                    </div>
+                </footer>
             </div>
         );
     }
