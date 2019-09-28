@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
 import OutlinedButtons from '../components/TabButtons.js';
+import maps from '../GoogleMaps.PNG';
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -24,7 +25,7 @@ const ColorButton = withStyles(theme => ({
     },
   }))(Button);
 
-class Why extends React.Component {
+class Resources extends React.Component {
     render(){
         return(
             <div>
@@ -35,29 +36,16 @@ class Why extends React.Component {
                     <OutlinedButtons/>
                 </div>
                 <div align="center">
-                    <p>Why are you here?</p>
+                    <p>Treatment Centers Nearby</p>
                 </div>
                 <div align="center">
                     <p></p>
                 </div>
                 <div align="center">
-                    <table cellspacing="10">
-                        <tr>
-                            <td cell>
-                                <Button variant="outlined" size="large" color="primary" align="center">
-                                   Give Help
-                                </Button>
-                            </td>
-                            <td>
-                                <Button variant="outlined" size="large" color="primary" align="center">
-                                    Get Help
-                                </Button>
-                            </td>
-                        </tr>
-                    </table>
+                    
                 </div>
                 <div align="center">
-                    <p></p>
+                    <img src={maps}/>
                 </div>
                 <div align="center">
                     
@@ -67,4 +55,4 @@ class Why extends React.Component {
     }
 }
 
-export default Why;
+export default Resources;
