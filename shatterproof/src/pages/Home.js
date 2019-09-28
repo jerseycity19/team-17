@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Home.css';
+import Forum from './Forum';
 //import Grid from "@material-ui/core/Grid";
 import logo from '../ShatterproofLogo.png';
 
@@ -15,6 +16,7 @@ class Home extends React.Component {
                 <div className="Body">
                     <p> Hello! </p>
                     </div>
+                    <Forum/>
             </div>
         );
     }
