@@ -1,0 +1,72 @@
+.Title {
+    text-align: center;
+    font-family: Andale Mono, monospace;
+    background-color: rgb(197, 252, 252);
+    font-size: 150%;
+    line-height: 300%;
+    width: 100%;
+    height: 100%;
+}
+
+.ParentConv {
+    font-family: Andale Mono, monospace;
+    width: 100%;
+}
+
+.Conv1 {
+    text-indent: 100x;
+    background-color: rgb(228, 235, 235);
+    height: 60px;
+    left: 20x;
+    border-style: ridge;
+    margin-top: 10px;
+    
+}
+.Conv2 {
+    text-indent: 100x;
+    height: 60px;
+    left: 20x;
+    border-style: ridge;
+    margin-top: 10px;
+    text-align: right;
+    
+}
+.Conv3 {
+    text-indent: 100x;
+    background-color: rgb(228, 235, 235);
+    height: 60px;
+    left: 20x;
+    border-style: ridge;
+    margin-top: 10px;
+    
+}
+.Conv4 {
+    text-indent: 100x;
+    height: 60px;
+    text-align: right;
+    left: 20x;
+    border-style: ridge;
+    margin-top: 10px;
+    
+}
+.Conv5 {
+    text-indent: 100x;
+    background-color: rgb(228, 235, 235);
+    height: 60px;
+    left: 20x;
+    border-style: ridge;
+    margin-top: 10px;
+    
+}
+.compose {
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+}
+.compose-input {
+    flex: 1;
+    border: groove;
+    font-size: 20px;
+    height: 70px;
+    background: none;
+  }
