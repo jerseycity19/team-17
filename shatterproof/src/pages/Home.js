@@ -5,10 +5,16 @@ import './Home.css';
 import logo from '../ShatterproofLogo.png';
 
 class Home extends React.Component {
+
     render() {
         return (
-            <div className="Home">
-                <img src={logo} className="App-logo" alt="logo" />
+            <div>
+                <div className="Logo">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    </div>
+                <div className="Body">
+                    <p> Hello! </p>
+                    </div>
             </div>
         );
     }
