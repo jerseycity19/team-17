@@ -1,0 +1,43 @@
+{
+  "name": "shatterproof",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "bootstrap": "^4.3.1",
+    "lodash": "^4.17.15",
+    "lodash.times": "^4.3.2",
+    "material-ui": "^1.0.0-beta.47",
+    "react": "^16.10.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.10.0",
+    "react-map-gl": "5.0.11",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "3.1.2",
+    "timestamp-utils": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
+  }
+}
