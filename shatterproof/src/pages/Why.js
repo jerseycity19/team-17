@@ -41,17 +41,26 @@ class Why extends React.Component {
                     <p></p>
                 </div>
                 <div align="center">
-                    <Button variant="outlined" size="large" color="primary" align="center">
-                    Get Help
-                    </Button>
+                    <table cellspacing="10">
+                        <tr>
+                            <td cell>
+                                <Button variant="outlined" size="large" color="primary" align="center">
+                                   Give Help
+                                </Button>
+                            </td>
+                            <td>
+                                <Button variant="outlined" size="large" color="primary" align="center">
+                                    Get Help
+                                </Button>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div align="center">
                     <p></p>
                 </div>
                 <div align="center">
-                    <Button variant="outlined" size="large" color="primary" align="center">
-                     Give Help
-                    </Button>
+                    
                 </div>
             </div>
         )
