@@ -37,12 +37,18 @@ class Resources extends React.Component {
     render(){
         return(
             <div>
-                <div align="center">
-                    <h1>Treatment Centers Nearby</h1>
+                < br/>
+                < br/>
+                <div className="Title2" align="center">
+                    <p>  TREATMENT CENTERS NEARBY </p>
                 </div>
+                < br/>
+                < br/>
+                < br/>
                 <div align="center">
-                    <p></p>
+                    <p> We are here to be a resource <strong>for you</strong>. Look on the map below to find the nearest treatment centers.</p>
                 </div>
+                < br/>
                 <div className='map-wrap'>
                 <Map/>
                 </div>
