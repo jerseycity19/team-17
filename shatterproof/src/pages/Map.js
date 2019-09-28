@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactMapGL, {Marker} from 'react-map-gl';
 import pin from "../locationPin.png";
+import health from "../health.png";
 import "./map.css"
 
 export default class Map extends Component {
@@ -9,15 +10,46 @@ export default class Map extends Component {
         viewport: {
            width: "50vw",
            height: "50vh",
-           latitude: 42.430472,
-           longitude: -123.334102,
+           latitude: 40.7250863,
+           longitude: -73.9773608,
            zoom: 16
         },
-        userLocation: {}
+        userLocation: {},
+        healthCenters: []
     };
     componentWillMount(){
         this.setUserLocation();
     }
+
+    componentDidMount() {
+        this.fetchStationAPI();
+    }
+
+    
+
+    fetchStationAPI = () => {
+        fetch(`https://data.cityofnewyork.us/resource/f7b6-v6v3.json`)
+        .then(res => res.json())
+        .then(healthy => {
+           this.setState({
+              healthCenters: healthy
+           });
+         });
+     };
+
+     loadMarkers = () => {
+        return this.state.healthCenters.map(spot => {
+          return (
+            <Marker
+               key={spot.objectid}
+               latitude={parseFloat(spot.latitude)}
+               longitude={parseFloat(spot.longitude)}
+            >
+              <img className="map-image" src={health}></img>
+            </Marker>
+          );
+        });
+    };
 
     setUserLocation = () => {
         navigator.geolocation.getCurrentPosition(position => {
@@ -50,7 +82,7 @@ export default class Map extends Component {
                 {...this.state.viewport}
                 mapStyle="mapbox://styles/mapbox/outdoors-v11"
                 onViewportChange={(viewport) => this.setState({viewport})}
-                mapboxApiAccessToken={}
+                mapboxApiAccessToken={"pk.eyJ1IjoibW9pbmJ1bmciLCJhIjoiY2sxMzZhMDIxMDY2MzNibHNjMnU5aHRlMSJ9.GXYXDzxFExthOz5GLFbPYg"}
             >
             {Object.keys(this.state.userLocation).length !== 0 ? (
                 <Marker
@@ -62,6 +94,7 @@ export default class Map extends Component {
                 ) : ( 
                     <div></div>
                 )}
+                {/* {this.loadMarkers()} */}
             </ReactMapGL>
         </div>
         </div>

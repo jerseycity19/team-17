@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-import maps from '../GoogleMaps.PNG';
+import Map from './Map.js'
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -43,8 +43,8 @@ class Resources extends React.Component {
                 <div align="center">
                     <p></p>
                 </div>
-                <div align="center">
-                    <img src={maps}/>
+                <div className='map-wrap'>
+                <Map/>
                 </div>
                 <div align="center">
                     
