@@ -1,10 +1,7 @@
 import React from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Resources from '../pages/Resources.js';
 
 const styles = {
     container:{
@@ -25,24 +22,11 @@ const styles = {
         display: 'none',
   },
 };
-  input: {
-    display: 'none',
-  },
-}));
-
-const OutlinedButtons =({
-  history
-})=> {
-  const classes = useStyles();
 
 const  OutlinedButtons=({classes})=> {
   return (
         <div  className={classes.container}>
             <Button className={classes.button}>
-    <div>
-      <Container>
-        <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
-            <Button className={classes.button} onClick={()=>history.push('/resources')}>
                 Resources
             </Button>
             <Button className={classes.button}>
@@ -54,10 +38,10 @@ const  OutlinedButtons=({classes})=> {
             <Button className={classes.button}>
                 Tracker
             </Button>
-            <Button className={classes.button} onClick={()=>history.push('/donate')}>
-                <a href="https://connect.clickandpledge.com/w/Form/4e21c330-0011-430e-a2c0-5400c4ba45d5" target="_blank">Donate</a>
+            <Button className={classes.button}>
+              <a href="https://connect.clickandpledge.com/w/Form/4e21c330-0011-430e-a2c0-5400c4ba45d5" target="_blank">Donate</a>
             </Button>
-            <Button className={classes.button} onClick={()=>history.push('/fundraise')}>
+            <Button className={classes.button}>
                 <a href="https://www.shatterproof.org/get-involved" target="_blank">Fundraise</a>
             </Button>
         </div>
@@ -65,11 +49,3 @@ const  OutlinedButtons=({classes})=> {
 }
 
 export default withStyles(styles)(OutlinedButtons);
-        </Typography> 
-        
-      </Container>
-      </div>
-    );
-}
-
-export default OutlinedButtons;
