@@ -4,16 +4,16 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.4.3",
-<<<<<<< HEAD
     "bootstrap": "^4.3.1",
+    "lodash": "^4.17.15",
+    "lodash.times": "^4.3.2",
     "material-ui": "^1.0.0-beta.47",
-=======
->>>>>>> master
     "react": "^16.10.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.10.0",
     "react-router-dom": "^5.1.1",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "timestamp-utils": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

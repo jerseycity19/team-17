@@ -23,21 +23,9 @@ const styles = {
   },
 };
 
-const OutlinedButtons =({
-  history
-})=> {
-  const classes = useStyles();
-
 const  OutlinedButtons=({classes})=> {
   return (
-        <div  className={classes.container}></div>
-            <Button className={classes.button}></Button>
-    <div>
-      <Container>
-        <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
-            {/* <Button className={classes.button}>
-                Home
-            </Button> */}
+        <div  className={classes.container}>
             <Button className={classes.button}>
                 Resources
             </Button>
@@ -56,17 +44,8 @@ const  OutlinedButtons=({classes})=> {
             <Button className={classes.button}>
                 <a href="https://www.shatterproof.org/get-involved" target="_blank">Fundraise</a>
             </Button>
-            {/* <Button className={classes.button}>
-                Login
-            </Button>
-            <Button className={classes.button}>
-                Register
-            </Button> */}
-        </Typography> 
-        
-      </Container>
-      </div>
+        </div>
     );
 }
 
-export default OutlinedButtons;
+export default withStyles(styles)(OutlinedButtons);
