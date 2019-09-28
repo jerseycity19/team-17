@@ -1,9 +1,7 @@
 import React from 'react';
-import logo from '../ShatterproofLogo.png';
 import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-import OutlinedButtons from '../components/TabButtons.js';
 import maps from '../GoogleMaps.PNG';
 
 const useStyles = makeStyles(theme => ({
@@ -39,12 +37,6 @@ class Resources extends React.Component {
     render(){
         return(
             <div>
-                <div className="Logo">
-                    <img src={logo} className="App-logo" alt="logo" />
-                </div>
-                <div className="Tabs">
-                    <OutlinedButtons/>
-                </div>
                 <div align="center">
                     <h1>Treatment Centers Nearby</h1>
                 </div>
@@ -62,6 +54,9 @@ class Resources extends React.Component {
                 </div>
                 <div align="center">
                     <ColoredLine />
+                </div>
+                <div align="center">
+                    <h2>Reviews</h2>
                 </div>
                 <div>
                     <h3>Kevin</h3>

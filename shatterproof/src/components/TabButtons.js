@@ -23,39 +23,52 @@ function Gallery() {
   return <h2>Gallery</h2>
 }
 
-export default function OutlinedButtons() {
+function Forum() {
+  return <h2>Forum</h2>
+}
+
+function Tracker() {
+  return <h2>Tracker</h2>
+}
+
+function Donate() {
+  return <h2>Donate</h2>
+}
+
+const OutlinedButtons =({
+  history
+})=> {
   const classes = useStyles();
 
   return (
     <div>
-      <Router>
       <Container>
         <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
-            <Button className={classes.button}>
-                <Link to="/resources">Resources</Link>
+            <Button className={classes.button} onClick={()=>history.push('/resources')}>
+                Resources
             </Button>
             <Button className={classes.button}>
-                Gallery
+              <Link to="/gallery">Gallery</Link>
             </Button>
             <Button className={classes.button}>
-                Forum
+              <Link to="/forum">Forum</Link>
             </Button>
             <Button className={classes.button}>
-                Tracker
+              <Link to="/tracker">Tracker</Link>
             </Button>
             <Button className={classes.button}>
-                Donate
+              <Link to="/donate">Donate</Link>
             </Button>
         </Typography> 
-
+        
         <Switch>
           <Route path = "/resources">
-            <Resources />
+            <Resources/>
           </Route>
         </Switch>
       </Container>
-      </Router>
       </div>
     );
 }
-      
+
+export default OutlinedButtons;
