@@ -4,7 +4,6 @@ import logo from '../ShatterproofLogo.png';
 import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
-import OutlinedButtons from '../components/TabButtons.js';
 import { SocialIcon } from 'react-social-icons';
 
 class Home extends React.Component {
@@ -12,12 +11,6 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <div className="Logo">
-                    <img src={logo} className="App-logo" alt="logo" />
-                </div>
-                <div className="Tabs">
-                    <OutlinedButtons/>
-                </div>
                 <div className="Body">
                     <br />
                     <p className="Mission-Statement"> Shatterproof is a national

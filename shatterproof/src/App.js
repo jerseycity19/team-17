@@ -1,9 +1,42 @@
 import React from 'react';
+import logo from './ShatterproofLogo.png';
+import './App.css';
 import Home from './pages/Home.js';
+import Calendar from './pages/Calendar.js';
+import Why from './pages/Why.js';
+import Resources from './pages/Resources';
+import {BrowserRouter as Router , Route } from 'react-router-dom';
+import OutlinedButtons from './components/TabButtons.js';
 
 function App() {
   return (
-    // <div className="App">
+    <Router>
+      {/* <Header/>  --- ALWAYS RENDER */}
+      <div className="Logo">
+          <img src={logo} className="App-logo" alt="logo" />
+      </div>
+      <Route
+      path="/"
+      render={(props)=><OutlinedButtons {...props} />}
+      />
+      {/* render components based off of the url route  */}
+      <Route
+      exact
+      path="/"
+      render ={(props)=> <Home {...props} />}
+      />
+      <Route
+      path="/resources"
+      render ={(props)=> <Resources {...props} />}
+      />
+
+    </Router>
+  );
+}
+
+export default App;
+
+ // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
     //     <p>
@@ -19,8 +52,3 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-      <Home/>
-  );
-}
-
-export default App;
