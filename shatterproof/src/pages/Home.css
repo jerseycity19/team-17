@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto:300,400&display=swap'); /*Inconsolata for forum*/
 
 body {
-    text-align: center;
+    /* text-align: center; */
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
