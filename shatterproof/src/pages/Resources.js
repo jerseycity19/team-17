@@ -25,6 +25,16 @@ const ColorButton = withStyles(theme => ({
     },
   }))(Button);
 
+  const ColoredLine = () => (
+        <hr
+            style = {{
+                color: teal[300],
+                backgroundColor: teal[300],
+                height: 5
+            }}
+        />
+  )
+
 class Resources extends React.Component {
     render(){
         return(
@@ -36,7 +46,7 @@ class Resources extends React.Component {
                     <OutlinedButtons/>
                 </div>
                 <div align="center">
-                    <p>Treatment Centers Nearby</p>
+                    <h1>Treatment Centers Nearby</h1>
                 </div>
                 <div align="center">
                     <p></p>
@@ -49,6 +59,13 @@ class Resources extends React.Component {
                 </div>
                 <div align="center">
                     
+                </div>
+                <div align="center">
+                    <ColoredLine />
+                </div>
+                <div>
+                    <h3>Kevin</h3>
+                    <p>I have personally spoke with dozens of people who have completed Adanced Health and Educations program. They all love the facility and staff. If you or someone you love is in need of a drug rehab in New Jersey give this center a call, you won't be disappointed.</p>
                 </div>
             </div>
         )
