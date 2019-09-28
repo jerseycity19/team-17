@@ -28,7 +28,11 @@ class Home extends React.Component {
                     and educating the community. </p>
 
                     <div className="Footer-Logos">
-                        <SocialIcon url="http://twitter.com/jaketrent" />
+                        <div className="Logos">
+                            <SocialIcon url="http://twitter.com/jaketrent" style={{margin: 8}}/>
+                            <SocialIcon url="http://facebook.com/jaketrent" style={{margin: 8}}/>
+                            <SocialIcon url="http://instagram.com/jaketrent" style={{margin: 8}}/>
+                        </div>
                     </div>
                 </div>
             </div>
