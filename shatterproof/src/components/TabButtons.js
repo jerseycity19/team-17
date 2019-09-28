@@ -1,26 +1,31 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
-  button: {
-    margin: theme.spacing(3),
-    backgroundColor: '#fffff',
+const styles = {
+    container:{
+        display:"flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        backgroundColor: '#6DcBBD',
+        height: '16vh',
+    },
+    button: {
+        backgroundColor: '#fffff',
+        margin:'auto 0',
+        marginLeft: '20px',
+        fontSize: '1.3rem',
+        fontFamily: 'Roboto'
+    },
+    input: {
+        display: 'none',
   },
-  input: {
-    display: 'none',
-  },
-}));
+};
 
-export default function OutlinedButtons() {
-  const classes = useStyles();
-
+const  OutlinedButtons=({classes})=> {
   return (
-    <div>
-      <Container>
-        <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
+        <div  className={classes.container}>
             <Button className={classes.button}>
                 Resources
             </Button>
@@ -34,11 +39,13 @@ export default function OutlinedButtons() {
                 Tracker
             </Button>
             <Button className={classes.button}>
-                Donate
+              <a href="https://connect.clickandpledge.com/w/Form/4e21c330-0011-430e-a2c0-5400c4ba45d5" target="_blank">Donate</a>
             </Button>
-        </Typography> 
-      </Container>
-      </div>
+            <Button className={classes.button}>
+                <a href="https://www.shatterproof.org/get-involved" target="_blank">Fundraise</a>
+            </Button>
+        </div>
     );
 }
-      
+
+export default withStyles(styles)(OutlinedButtons);

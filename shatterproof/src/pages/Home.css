@@ -1,7 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto:300,400&display=swap'); /*Inconsolata for forum*/
+
+body {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 .Logo {
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.Mission-Statement {
+    width: 75%;
+    height: 75%;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.Footer-Logos {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 15px;
+  /*border-top: 1px solid #000;*/
+  background-color: #fff;
+  text-align: center;
 }
 
 .Tabs {
