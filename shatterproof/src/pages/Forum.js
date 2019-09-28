@@ -2,6 +2,7 @@ import React from 'react';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './Forum.css';
+//import CenteredGrid from './GridA.js';
 
 
 class Forum extends React.Component {
@@ -37,8 +38,9 @@ class Forum extends React.Component {
                 wrapperClassName="wrapperClassName"
                 editorClassName="editorClassName"
                 />
-
-            </div>
+                
+                </div>
+            
         );
     }
 }
