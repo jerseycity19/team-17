@@ -32,7 +32,7 @@ const  OutlinedButtons=({classes, history})=> {
         <Button className={classes.button} onClick={()=> history.push('/tracker')}>
             Track My Progress
         </Button>
-        <Button className={classes.button}>
+        <Button className={classes.button} onClick={()=> history.push('/stigma')}>
             Pledge To End Stigma
         </Button>
         <Button className={classes.button}>
