@@ -13,20 +13,21 @@
     font-weight: bold;
     font-family: Andale Mono, monospace;
     font-size: 150%;
-    margin-bottom: -50px;
+    margin-top: -20px;
+    margin-bottom: -80px;
 }
     
 .Info {
     text-align: center;
     text-indent: 100x;
     height: 60px;
-    font-family: Verdana, monospace;
+    /* font-family: Verdana, monospace; */
     left: 20x;
 }
     
 .Bullets{
     text-align: center;
-    font-family: Verdana, monospace;
+    /* font-family: Verdana, monospace; */
     margin-top: 85px;
     margin-bottom: -80px;
 }

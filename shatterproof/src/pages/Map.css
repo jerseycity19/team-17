@@ -1,0 +1,8 @@
+.map-image {
+    width:30px;
+    height: 30px;
+}
+.map-wrap{
+    display: flex;
+    justify-content: center;
+}
