@@ -1,15 +1,29 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
-  button: {
-    margin: theme.spacing(3),
-    backgroundColor: '#fffff',
+const styles = {
+    container:{
+        display:"flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        backgroundColor: '#6DcBBD',
+        height: '16vh',
+    },
+    button: {
+        backgroundColor: '#fffff',
+        margin:'auto 0',
+        marginLeft: '20px',
+        fontSize: '1.3rem',
+        fontFamily: 'Roboto'
+    },
+    input: {
+        display: 'none',
   },
+};
   input: {
     display: 'none',
   },
@@ -40,7 +54,10 @@ const OutlinedButtons =({
 })=> {
   const classes = useStyles();
 
+const  OutlinedButtons=({classes})=> {
   return (
+        <div  className={classes.container}>
+            <Button className={classes.button}>
     <div>
       <Container>
         <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
@@ -59,6 +76,11 @@ const OutlinedButtons =({
             <Button className={classes.button}>
               <Link to="/donate">Donate</Link>
             </Button>
+        </div>
+    );
+}
+
+export default withStyles(styles)(OutlinedButtons);
         </Typography> 
         
         <Switch>
