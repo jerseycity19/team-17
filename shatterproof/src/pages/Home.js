@@ -14,7 +14,6 @@ class Home extends React.Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     </div>
                 <div className="Body">
-                    <p> Hello! </p>
                     </div>
                     <Forum/>
             </div>
