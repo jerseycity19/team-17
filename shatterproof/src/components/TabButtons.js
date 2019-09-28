@@ -35,7 +35,9 @@ const  OutlinedButtons=({classes, history})=> {
             <Button className={classes.button}>
                 Forum
             </Button>
-            <Button className={classes.button}>
+            <Button 
+            className={classes.button} 
+            onClick={()=> history.push('/tracker')}>
                 Tracker
             </Button>
             <Button className={classes.button}>

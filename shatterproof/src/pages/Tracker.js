@@ -18,7 +18,9 @@ class Tracker extends React.Component {
         const { startDate, endDate } = this.state
     
         return (
-            <ReactLightCalendar startDate={startDate} endDate={endDate} onChange={this.onChange} range displayTime />
+            <Calendar startDate={startDate} endDate={endDate} onChange={this.onChange} range displayTime />
         )
       }
 }
+
+export default Tracker;

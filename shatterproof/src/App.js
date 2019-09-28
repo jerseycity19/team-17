@@ -4,12 +4,15 @@ import Home from './pages/Home.js';
 import Calendar from './pages/Calendar.js';
 import Why from './pages/Why.js';
 import Resources from './pages/Resources';
+import Tracker from './pages/Tracker';
 import {BrowserRouter as Router , Route } from 'react-router-dom';
 import OutlinedButtons from './components/TabButtons.js';
 import HomeButton from './components/HomeButton.js';
+import { SocialIcon } from 'react-social-icons';
 
 function App() {
   return (
+    <React.Fragment>
     <Router>
       {/* <Header/>  --- ALWAYS RENDER */}
       <Route
@@ -30,8 +33,18 @@ function App() {
       path="/resources"
       render ={(props)=> <Resources {...props} />}
       />
+      <Route
+      path="/tracker"
+      render ={(props)=> <Tracker {...props} />}
+      />
       
     </Router>
+      <div className="Logos">
+          <SocialIcon url="https://twitter.com/shatterproofhq?lang=en" target="_blank" style={{margin: 8}}/>
+          <SocialIcon url="https://www.facebook.com/ShatterproofHQ/?ref=nf" target="_blank" style={{margin: 8}}/>
+          <SocialIcon url="https://www.instagram.com/weareshatterproof/?hl=en" target="_blank" style={{margin: 8}}/>
+      </div>
+    </React.Fragment>
   );
 }
 
