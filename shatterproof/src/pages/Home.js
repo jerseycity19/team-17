@@ -19,6 +19,7 @@ class Home extends React.Component {
                     <OutlinedButtons/>
                 </div>
                 <div className="Body">
+                    <br />
                     <p className="Mission-Statement"> Shatterproof is a national
                     non-profit organization reversing the course of the addiction
                     crisis in America and is dedicated to ending the devastation

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans:300|Roboto:300&display=swap'); /*Inconsolata for forum*/
+
 body {
     text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Logo {
@@ -7,6 +11,7 @@ body {
     height: 100%;
     text-align: center;
 }
+
 .Mission-Statement {
     width: 75%;
     height: 75%;
