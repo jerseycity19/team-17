@@ -18,13 +18,6 @@ class Home extends React.Component {
                     and educating the community. </p>
 
                 </div>
-                <footer className="Footer-Logos">
-                    <div className="Logos">
-                        <SocialIcon url="https://twitter.com/shatterproofhq?lang=en" target="_blank" style={{margin: 8}}/>
-                        <SocialIcon url="https://www.facebook.com/ShatterproofHQ/?ref=nf" target="_blank" style={{margin: 8}}/>
-                        <SocialIcon url="https://www.instagram.com/weareshatterproof/?hl=en" target="_blank" style={{margin: 8}}/>
-                    </div>
-                </footer>
             </div>
         );
     }
