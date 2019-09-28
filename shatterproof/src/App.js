@@ -10,6 +10,7 @@ import OutlinedButtons from './components/TabButtons.js';
 import HomeButton from './components/HomeButton.js';
 import { SocialIcon } from 'react-social-icons';
 import Stigma from './pages/Stigma.js';
+import Forum from './pages/Forum.js';
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
       <Route
       path="/stigma"
       render ={(props)=> <Stigma {...props} />}
+      />
+      <Route
+      path="/forum"
+      render ={(props)=> <Forum {...props} />}
       />
       
     </Router>
