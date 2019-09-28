@@ -16,7 +16,6 @@ class Home extends React.Component {
                     addiction treatment, shattering stigma of addiction, advocating
                     for federal and state policy change and prayer reform, and supporting
                     and educating the community. </p>
-
                 </div>
                 <footer className="Footer-Logos">
                     <div className="Logos">

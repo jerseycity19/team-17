@@ -4,34 +4,15 @@ import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
 import maps from '../GoogleMaps.PNG';
 
-const useStyles = makeStyles(theme => ({
-    button: {
-      margin: theme.spacing(5),
-    },
-    input: {
-      display: 'none',
-    },
-}));
-
-const ColorButton = withStyles(theme => ({
-    root: {
-      color: theme.palette.getContrastText(teal[300]),
-      backgroundColor: teal[300],
-      '&:hover': {
-        backgroundColor: teal[500],
-      },
-    },
-  }))(Button);
-
-  const ColoredLine = () => (
-        <hr
-            style = {{
-                color: teal[300],
-                backgroundColor: teal[300],
-                height: 5
-            }}
-        />
-  )
+const ColoredLine = () => (
+    <hr
+        style = {{
+            color: teal[300],
+            backgroundColor: teal[300],
+            height: 5
+        }}
+    />
+)
 
 class Resources extends React.Component {
     render(){
