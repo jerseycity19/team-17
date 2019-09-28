@@ -10,20 +10,20 @@ class Why extends React.Component {
                     <p>Why are you here?</p>
                 </div>
                 <div align="center">
-                <p></p>
+                    <p></p>
                 </div>
                 <div align="center">
-                <Button variant="outlined" size="large" color="primary" align="center">
-                 Get Help
-                </Button>
+                    <Button variant="outlined" size="large" color="primary" align="center">
+                    Get Help
+                    </Button>
                 </div>
                 <div align="center">
-                <p></p>
+                    <p></p>
                 </div>
                 <div align="center">
-                <Button variant="outlined" size="large" color="primary" align="center">
-                 Give Help
-                </Button>
+                    <Button variant="outlined" size="large" color="primary" align="center">
+                     Give Help
+                    </Button>
                 </div>
             </div>
         )
