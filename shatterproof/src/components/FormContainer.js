@@ -82,20 +82,20 @@ class FormContainer extends Component {
   handleFormSubmit(e) {
     e.preventDefault();
     let userData = this.state.newUser;
-
-    fetch("http://example.com", {
-      method: "POST",
-      body: JSON.stringify(userData),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json"
-      }
-    }).then(response => {
-      response.json().then(data => {
-        console.log("Successful" + data);
-      });
-    });
+    // fetch("http://example.com", {
+    //   method: "POST",
+    //   body: JSON.stringify(userData),
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json"
+    //   }
+    // }).then(response => {
+    //   response.json().then(data => {
+    //     console.log("Successful" + data);
+    //   });
+    // });
   }
+  
 
   handleClearForm(e) {
     e.preventDefault();
@@ -142,7 +142,7 @@ class FormContainer extends Component {
         {/* Age */}
         <TextArea
           title={"Your message of support"}
-          rows={10}
+          rows={5}
           value={this.state.newUser.about}
           name={"currentPetInfo"}
           handleChange={this.handleTextArea}
@@ -150,7 +150,7 @@ class FormContainer extends Component {
         />
         {/* About you */}
         <Button
-          action={this.handleClearForm}
+          action={this.handleSubmitForm}
           type={"primary"}
           title={"Submit"}
           style={buttonStyle}
@@ -163,6 +163,15 @@ class FormContainer extends Component {
           style={buttonStyle}
         />{" "}
         {/* Clear the form */}
+        <TextArea
+          title={"JSON Response"}
+          rows={5}
+          //value={this.state.newUser.name,this.state.newUser.about}
+          name={"fullResponse"}
+          //handleChange={this.handleTextArea}
+          placeholder={JSON.stringify(this.state.newUser)}
+        />{" "}
+        {/* Print response below the form */}
       </form>
     );
   }
