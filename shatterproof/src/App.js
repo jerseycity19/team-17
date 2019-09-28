@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/Home.js';
+import Why from './pages/Why.js';
 
 function App() {
   return (
