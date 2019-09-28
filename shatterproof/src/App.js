@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home.js';
 import Calendar from './pages/Calendar.js';
+import Why from './pages/Why.js';
 
 function App() {
   return (
