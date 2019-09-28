@@ -21,6 +21,9 @@ export default function OutlinedButtons() {
     <div>
       <Container>
         <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
+            {/* <Button className={classes.button}>
+                Home
+            </Button> */}
             <Button className={classes.button}>
                 Resources
             </Button>
@@ -36,6 +39,12 @@ export default function OutlinedButtons() {
             <Button className={classes.button}>
                 Donate
             </Button>
+            {/* <Button className={classes.button}>
+                Login
+            </Button>
+            <Button className={classes.button}>
+                Register
+            </Button> */}
         </Typography> 
       </Container>
       </div>
