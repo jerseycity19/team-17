@@ -1,26 +1,30 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles(theme => ({
-  button: {
-    margin: theme.spacing(3),
-    backgroundColor: '#fffff',
+const styles = {
+    container:{
+        display:"flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        backgroundColor: '#6DcBBD',
+        height: '16vh',
+    },
+    button: {
+        backgroundColor: '#fffff',
+        margin:'auto 0',
+        marginLeft: '20px',
+        fontSize: '1.3rem',
+        fontFamily: 'Roboto'
+    },
+    input: {
+        display: 'none',
   },
-  input: {
-    display: 'none',
-  },
-}));
+};
 
-export default function OutlinedButtons() {
-  const classes = useStyles();
-
+const  OutlinedButtons=({classes})=> {
   return (
-    <div>
-      <Container>
-        <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '12vh'}}>
+        <div  className={classes.container}>
             <Button className={classes.button}>
                 Resources
             </Button>
@@ -36,8 +40,8 @@ export default function OutlinedButtons() {
             <Button className={classes.button}>
                 Donate
             </Button>
-        </Typography>
-      </Container>
-      </div>
+        </div>
     );
 }
+
+export default withStyles(styles)(OutlinedButtons);
