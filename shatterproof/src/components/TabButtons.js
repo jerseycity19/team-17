@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -14,15 +15,24 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function Resources() {
+  return <h2>Resources</h2>;
+}
+
+function Gallery() {
+  return <h2>Gallery</h2>
+}
+
 export default function OutlinedButtons() {
   const classes = useStyles();
 
   return (
     <div>
+      <Router>
       <Container>
         <Typography component="div" style={{ backgroundColor: '#6DcBBD', height: '10vh' }}>
             <Button className={classes.button}>
-                Resources
+                <Link to="/resources">Resources</Link>
             </Button>
             <Button className={classes.button}>
                 Gallery
@@ -37,7 +47,14 @@ export default function OutlinedButtons() {
                 Donate
             </Button>
         </Typography> 
+
+        <Switch>
+          <Route path = "/resources">
+            <Resources />
+          </Route>
+        </Switch>
       </Container>
+      </Router>
       </div>
     );
 }
