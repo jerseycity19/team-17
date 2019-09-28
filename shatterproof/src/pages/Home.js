@@ -5,25 +5,7 @@ import Button from '@material-ui/core/Button';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { teal } from '@material-ui/core/colors';
 import OutlinedButtons from '../components/TabButtons.js';
-
-const useStyles = makeStyles(theme => ({
-    button: {
-      margin: theme.spacing(5),
-    },
-    input: {
-      display: 'none',
-    },
-}));
-
-const ColorButton = withStyles(theme => ({
-    root: {
-      color: theme.palette.getContrastText(teal[300]),
-      backgroundColor: teal[300],
-      '&:hover': {
-        backgroundColor: teal[500],
-      },
-    },
-  }))(Button);
+import { SocialIcon } from 'react-social-icons';
 
 class Home extends React.Component {
 
@@ -46,7 +28,7 @@ class Home extends React.Component {
                     and educating the community. </p>
 
                     <div className="Footer-Logos">
-                        <p> hi </p>
+                        <SocialIcon url="http://twitter.com/jaketrent" />
                     </div>
                 </div>
             </div>
