@@ -1,0 +1,17 @@
+Include on 'Contact Us' page:
+
+<div className="centerContent">
+          <div className="selfCenter spaceBetween standardWidth">
+          <TwitterTimelineEmbed
+            sourceType="timeline"
+            userId="1729405056"
+            theme="dark"
+            options={{height: 400}}
+            noScrollbar
+            noFooter
+          />
+          </div>
+          </div>
+
+Reference documentation at https://saurabhnemade.github.io/react-twitter-embed/?path=/story/twitter-timeline-embed--timeline-with-noscrollbar
+The Twitter UserID is for ShatterProofHQ twitter page.
