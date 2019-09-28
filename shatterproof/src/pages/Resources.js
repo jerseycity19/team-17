@@ -44,9 +44,6 @@ class Resources extends React.Component {
                     <p></p>
                 </div>
                 <div align="center">
-                    
-                </div>
-                <div align="center">
                     <img src={maps}/>
                 </div>
                 <div align="center">
